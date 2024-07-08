@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Phone Numbers for MicroSIP",
+  "version": "2.9",
+  "permissions": [],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "matches": ["https://iev738.activehosted.com/*"],
+    "js": ["content.js"]
+  }],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": "icons/icon128.png",
+    "default_popup": "popup.html"
+  }
+}
